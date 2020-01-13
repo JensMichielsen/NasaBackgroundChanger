@@ -18,7 +18,7 @@ namespace NasaBackgroundWPF.Utils
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         static extern int SystemParametersInfo(int uAction, int uParam, string lpvParam, int fuWinIni);
 
-        public void ChangeDisplay(string tempPath, BackgroundStyles style)
+        public void SetRegistryForNewBackground(string tempPath, BackgroundStyles style)
         {
             RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Control Panel\Desktop", true);
             if (style == BackgroundStyles.Fill)

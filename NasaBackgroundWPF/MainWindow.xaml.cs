@@ -1,4 +1,5 @@
-﻿using NasaBackgroundWPF.Enums;
+﻿using Microsoft.Win32;
+using NasaBackgroundWPF.Enums;
 using NasaBackgroundWPF.Gateways;
 using NasaBackgroundWPF.Utils;
 using System;
@@ -30,6 +31,7 @@ namespace NasaBackgroundWPF
         {
             InitializeComponent();
             _HideProgram();
+            Installer.SetAutaticStartup();
 
             var apiGateway = new NasaApiGateway();
             var displayChanger = new DisplayChanger();
@@ -37,7 +39,7 @@ namespace NasaBackgroundWPF
             var imageResult = apiGateway.GetPictureOfTheDay();
             var imagePath = apiGateway.DownloadPicture(imageResult);
 
-            displayChanger.ChangeDisplay(imagePath, BackgroundStyles.Fill);
+            displayChanger.SetRegistryForNewBackground(imagePath, BackgroundStyles.Fill);
         }
 
         protected override void OnInitialized(EventArgs e)
@@ -94,5 +96,7 @@ namespace NasaBackgroundWPF
             WindowState = WindowState.Normal;
             ShowInTaskbar = true;
         }
+
+        
     }
 }

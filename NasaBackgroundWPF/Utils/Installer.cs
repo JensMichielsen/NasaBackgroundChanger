@@ -8,13 +8,16 @@ using System.Windows.Forms;
 
 namespace NasaBackgroundWPF.Utils
 {
-    public class Installer
+    public static class Installer
     {
-        public void SetStartup()
+        public static void SetAutaticStartup()
         {
-            RegistryKey rk = Registry.CurrentUser.OpenSubKey
-                ("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-            rk.SetValue("NasaBackgroundApp", Application.ExecutablePath);
+            RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+
+            if (rk.GetValue("NasaBackgroundWPF") == null)
+            {
+                rk.SetValue("NasaBackgroundWPF", System.Reflection.Assembly.GetExecutingAssembly().Location);
+            }
         }
     }
 }
