@@ -32,14 +32,6 @@ namespace NasaBackgroundWPF
             InitializeComponent();
             _HideProgram();
             Installer.SetAutaticStartup();
-
-            var apiGateway = new NasaApiGateway();
-            var displayChanger = new DisplayChanger();
-
-            var imageResult = apiGateway.GetPictureOfTheDay();
-            var imagePath = apiGateway.DownloadPicture(imageResult);
-
-            displayChanger.SetRegistryForNewBackground(imagePath, BackgroundStyles.Fill);
         }
 
         protected override void OnInitialized(EventArgs e)
@@ -61,6 +53,7 @@ namespace NasaBackgroundWPF
         private void _OnLoaded(object sender, RoutedEventArgs e)
         {
             notifyIcon.Visible = true;
+            new DisplayChanger().StartBackgroundChangeCycle(new TimeSpan(24, 0, 0), new TimeSpan(16,21,0));
         }
 
         private System.Windows.Forms.ContextMenu _CreateContextMenu()

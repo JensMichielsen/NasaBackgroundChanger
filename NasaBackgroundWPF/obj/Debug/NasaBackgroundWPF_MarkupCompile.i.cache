@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Projects\NasaBackgroundApp\NasaBackgroundWPF\obj\Debug\
+C:\Projects\NasaBackgroundChanger\NasaBackgroundWPF\obj\Debug\
 NasaBackgroundWPF
 none
 false
 DEBUG;TRACE
-C:\Projects\NasaBackgroundApp\NasaBackgroundWPF\App.xaml
+C:\Projects\NasaBackgroundChanger\NasaBackgroundWPF\App.xaml
 11151548125
 
-121914917418
-16-1535730771
+13-2011992119
+16626894358
 MainWindow.xaml;
 
-False
+True
 
