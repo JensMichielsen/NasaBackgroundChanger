@@ -1,0 +1,6 @@
+C:\Projects\NasaBackgroundChanger\TestConsole\bin\Debug\TestConsole.exe.config
+C:\Projects\NasaBackgroundChanger\TestConsole\bin\Debug\TestConsole.exe
+C:\Projects\NasaBackgroundChanger\TestConsole\bin\Debug\TestConsole.pdb
+C:\Projects\NasaBackgroundChanger\TestConsole\obj\Debug\TestConsole.csproj.CoreCompileInputs.cache
+C:\Projects\NasaBackgroundChanger\TestConsole\obj\Debug\TestConsole.exe
+C:\Projects\NasaBackgroundChanger\TestConsole\obj\Debug\TestConsole.pdb

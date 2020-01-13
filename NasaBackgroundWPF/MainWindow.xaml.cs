@@ -29,13 +29,14 @@ namespace NasaBackgroundWPF
 
         public MainWindow()
         {
+            Logger.WriteToFile($"Program started {DateTime.Now}");
             InitializeComponent();
-            _HideProgram();
             Installer.SetAutaticStartup();
         }
 
         protected override void OnInitialized(EventArgs e)
         {
+            Logger.WriteToFile($"Program initializing {DateTime.Now}");
             notifyIcon = new System.Windows.Forms.NotifyIcon();
             notifyIcon.Text = "Nasa's Background Changer";
             notifyIcon.Click += new EventHandler(_OnNotifyIconLeftClick);
@@ -52,8 +53,11 @@ namespace NasaBackgroundWPF
 
         private void _OnLoaded(object sender, RoutedEventArgs e)
         {
+            _HideProgram();
             notifyIcon.Visible = true;
             new DisplayChanger().StartBackgroundChangeCycle(new TimeSpan(24, 0, 0), new TimeSpan(16,21,0));
+
+            Logger.WriteToFile($"Program loaded {DateTime.Now}");
         }
 
         private System.Windows.Forms.ContextMenu _CreateContextMenu()
@@ -80,6 +84,7 @@ namespace NasaBackgroundWPF
 
         private void _HideProgram()
         {
+            Hide();
             WindowState = WindowState.Minimized;
             ShowInTaskbar = false;
         }

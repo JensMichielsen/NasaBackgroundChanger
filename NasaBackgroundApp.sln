@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NasaBackgroundWPF", "NasaBackgroundWPF\NasaBackgroundWPF.csproj", "{A85815AE-A666-4F4D-8CE9-5DC8F79A77A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{ED581463-C8D4-4A6D-9E2F-A526F66D3619}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{00806925-9325-4C74-82EB-5C6EF1FD25FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,12 @@ Global
 		{A85815AE-A666-4F4D-8CE9-5DC8F79A77A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A85815AE-A666-4F4D-8CE9-5DC8F79A77A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A85815AE-A666-4F4D-8CE9-5DC8F79A77A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED581463-C8D4-4A6D-9E2F-A526F66D3619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED581463-C8D4-4A6D-9E2F-A526F66D3619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED581463-C8D4-4A6D-9E2F-A526F66D3619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED581463-C8D4-4A6D-9E2F-A526F66D3619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00806925-9325-4C74-82EB-5C6EF1FD25FA}.Debug|Any CPU.ActiveCfg = Debug
+		{00806925-9325-4C74-82EB-5C6EF1FD25FA}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

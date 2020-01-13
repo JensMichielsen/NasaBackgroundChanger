@@ -33,3 +33,4 @@ C:\Projects\NasaBackgroundChanger\NasaBackgroundWPF\obj\Debug\NasaBackgroundWPF.
 C:\Projects\NasaBackgroundChanger\NasaBackgroundWPF\obj\Debug\NasaBackgroundWPF.csproj.GenerateResource.cache
 C:\Projects\NasaBackgroundChanger\NasaBackgroundWPF\obj\Debug\NasaBackgroundWPF.csproj.CoreCompileInputs.cache
 C:\Projects\NasaBackgroundChanger\NasaBackgroundWPF\obj\Debug\NasaBackgroundWPF.csproj.CopyComplete
+C:\Projects\NasaBackgroundChanger\NasaBackgroundWPF\obj\Debug\NasaBackgroundWPF.csprojAssemblyReference.cache
